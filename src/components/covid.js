@@ -9,7 +9,7 @@ const Covid = () => {
 
     const getCovidData = async () => {
         try {
-            const response = await fetch('https://api.covid19india.org/data.json');
+            const response = await fetch('https://data.covid19india.org/data.json');
             const actualData = await response.json();
             // console.log(actualData.statewise[0]);
             setData(actualData.statewise[0]);
